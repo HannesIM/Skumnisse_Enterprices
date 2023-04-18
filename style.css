@@ -1,0 +1,116 @@
+body {
+  background-color: rgb(249, 255, 255);
+}
+
+.profilbilde {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.ettprofilbilde {
+  padding: 50px;
+  align-items:center;
+  align-content: center;
+}
+
+.headtitle {
+  color: #ffffff
+}
+
+.top {
+  background-color: #f9dee8;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display:flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+
+.header {
+  display:flex ;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+
+.velkommen {
+  color: #ffffff;
+}
+
+.profilbilder {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.profilbilde:hover {
+  animation: scaleprofilbilde 0.15s linear forwards;
+  outline: 3px solid #f9dee8;
+  outline-offset: -2px;
+}
+
+.skumnisser {
+  width: 65px;
+  height: 135px;
+  margin-left: 20px;
+  margin-right: 20px;
+  animation: scale 4s infinite alternate;
+
+}
+
+.skum1 {
+  animation: rotation 2s infinite alternate;
+}
+
+.navnunderprofilbilde {
+  text-align: center;
+  font-size: large;
+}
+
+.navnunderprofilbilde:hover {
+  animation: scaleprofilbilde 1.5s infinite alternate;
+}
+
+img {
+  object-fit: cover;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(90%);
+  }
+
+  to {
+    transform: scale(110%);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(-10deg);
+  }
+
+  to {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes scaleprofilbilde {
+  from {
+    transform: scale(100%);
+  }
+
+  to {
+    transform: scale(110%);
+  }
+}
+
+
+
+
+

@@ -1,0 +1,238 @@
+
+
+.php {
+    background-color: #f9dee8;
+}
+.profil {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(249, 255, 255);
+    align-self: center;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.profilbilde {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border-color: #f9dee8;
+    border
+}
+.icon {
+    width: 3%;
+}
+
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #f9dee8;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: #ebcad6;
+  }
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+    align-self: center
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+
+  .row {
+    padding-left: 50px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container {
+    position: relative;
+    display: none;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+
+  #expandedImg {
+    width: 600px;
+    height: 600px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #f9dee8;
+    font-size: 50px;
+    cursor: pointer;
+  }
+
+  .innleg {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .innlegbilde {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bilder {
+    border-radius: 5%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+
+
+  :root {
+    --font-family-primary: 'Vollkorn', serif;
+    --font-family-secondary: 'PT Sans', sans-serif;
+    
+    --font-size-title: 32px;
+    --line-height-title: 1.4;
+    --font-size-caption: 14px;
+    --line-height-caption: 1.2;
+    
+    --color-text: #222022;
+    --color-highlight-primary: #f9dee8;
+    --color-highlight-secondary: #ffffff;
+    --border-radius-primary: 32px; 
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+  
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  @mixin mediaBig {
+    @media (min-width: 576px) {
+      @content;
+    }
+  }
+  
+  @include mediaBig {
+    :root {
+      --font-size-title: 40px;
+    }  
+  }
+  
+  .card {
+    min-width: 500px;
+    max-width: 960px;
+    border-radius: var(--border-radius-primary);
+    box-shadow: 24px 24px 80px rgba(0,0,0,0.1);
+    padding: 20px 20px 28px 20px;
+    box-sizing: border-box;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    @include mediaBig {
+      flex-direction: row;
+      align-items: center;
+      margin: 40px;
+      padding: 32px;
+    }
+  }
+  
+  .card__image {
+    width: 100%;
+    max-height: 300px;
+    border-radius: var(--border-radius-primary);
+    object-fit: cover;
+    margin-bottom: 18px;
+    
+    @include mediaBig {
+      width: 45%;
+      max-height: none;
+      min-height: 400px;
+      margin-bottom: 0;
+    }
+  }
+  
+  .card__content {
+    @include mediaBig {
+      width: 55%;
+      padding-left: 40px;
+    }
+  }
+  
+  .card__date {
+    display: block;
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-caption);
+    line-height: var(--line-height-caption);
+    color: var(--color-text);
+    margin-bottom: 6px;
+    
+    @include mediaBig {
+      margin-bottom: 8px;
+    }
+  }
+  
+  .card__title {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-title);
+    line-height: var(--line-height-title);
+    color: var(--color-text);
+    box-decoration-break: clone;
+    background-image: linear-gradient(90deg, var(--color-highlight-primary), var(--color-highlight-secondary));
+    background-size: 100% 42%;
+    background-repeat: no-repeat;
+    background-position: 0 85%;
+    padding: 0 4px;
+    margin-left: -4px;
+  }
+
+img {
+    object-fit: cover;
+}
+  
